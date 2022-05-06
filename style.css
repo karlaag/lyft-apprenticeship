@@ -1,0 +1,53 @@
+.wrapper {
+  border: 1px solid #e6eaf0;
+}
+table {
+  border-collapse: collapse;
+  background: #fff;
+}
+.table-scores {
+  table-layout: fixed;
+  width: 175px;
+  display: inline-block;
+  background: #f9fafc;
+  border-right: 1px solid #e6eaf0;
+  vertical-align: top;
+}
+.table-scores td, .table-scores th {
+  max-width: 179px;
+}
+.table-scores th {
+  background: #eff1f4;
+  text-align: left;
+}
+@media (min-width: 900px) {
+  .table-data-wrapper td, .table-data-wrapper th {
+    min-width: calc((100vw - 2 * 40px - 180px) / 5);
+    max-width: calc((100vw - 2 * 40px - 180px) / 5);
+  }
+}
+@media (max-width: 1023px) {
+  .table-data-wrapper td, .table-data-wrapper th {
+    min-width: calc((100vw - 2 * 40px - 180px) / 3);
+    max-width: calc((100vw - 2 * 40px - 180px) / 3);
+  }
+}
+.table-data-wrapper td:not(:last-child), .table-data-wrapper th:not(:last-child) {
+  border-right: 1px solid #e6eaf0;
+}
+th {
+  height: 72px;
+}
+th, td {
+  padding: 0 16px;
+}
+thead {
+  background: #f9fafc;
+}
+td {
+  height: 48px;
+}
+thead tr,
+tbody tr:not(:last-child) {
+  border-bottom: 1px solid #e6eaf0;
+}
